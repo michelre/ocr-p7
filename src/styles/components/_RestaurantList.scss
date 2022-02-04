@@ -1,0 +1,43 @@
+.restaurants-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    height: 75vh;
+    overflow: scroll;
+  }
+
+  .restaurants-list__container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    cursor: pointer;
+    width: 20rem;
+    background: white;
+    color: $color-2;
+    padding: 2rem;
+}
+
+.restaurants-list__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2rem; 
+    flex-direction: column;
+}
+
+.restaurants-list__name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+

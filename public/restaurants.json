@@ -1,0 +1,83 @@
+[  
+    {  
+        "restaurantName":"Botafumeiro",
+        "address":"Carrer Gran de Gràcia, 81, 08012 Barcelona, Spain",
+        "lat":41.400424,
+        "long":2.15245,
+        "ratings":[
+            {
+                "stars":4,
+                "comment":"Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."       
+            },       
+            {
+                "stars":5, 
+                "comment":"Tout simplement mon restaurant préféré !"
+            }    
+        ]
+    },
+    
+    {
+        "restaurantName":"Restaurant Cibulet",
+        "address":"Carrer de Francisco Giner, 54, 08012 Barcelona, Spain",
+        "lat":41.3998455,
+        "long":2.3998455,
+        "ratings":[
+            { 
+                "stars":5,
+                "comment":"Une minuscule pizzeria délicieuse cachée juste à côté du Sacré choeur !"
+            },
+            { 
+                "stars":3,
+                "comment":"J'ai trouvé ça correct, sans plus"  
+            }
+        ]
+    },
+    {
+        "restaurantName":"La Pubilla",
+        "address":"Plaça de la Llibertat, 23, 08012 Barcelona, Spain",
+        "lat":41.3998498,
+        "long":2.1538875,
+        "ratings":[
+            { 
+                "stars":5,
+                "comment":"Tout était parfait, de l’accueil, à l’ambiance jusqu’à à la nourriture! Je recommande vivement."
+            },
+            { 
+                "stars":4,
+                "comment":"Très agréable soirée. Repas délicieux et surprenant. Une équipe très professionnelle et à l'écoute. Lieu magnifique. Seul bémol, le bruit (2 tablées TRÈS bruyantes à l'étage durant"  
+            }
+        ]
+    },
+    {
+        "restaurantName":"Taberna del Cura",
+        "address":"Carrer Gran de Gràcia, 83, 08012 Barcelona, Spain",
+        "lat":41.3998455,
+        "long":2.1538891,
+        "ratings":[
+            { 
+                "stars":2,
+                "comment":"Cuisine exceptionnelle, des goûts exquis et présentation raffinée! Le personnel est au petit soin. :) Un bon choix de vins à prix très raisonnable. Fortement recommandé !"
+            },
+            { 
+                "stars":3,
+                "comment":"Très bon accueil. Decoration soignée. Et nous nous sommes régalés."  
+            }
+        ]
+    },
+    {
+        "restaurantName":"La Tropa",
+        "address":"Carrer d'Astúries, 11, 08012 Barcelona, Spain",
+        "lat":41.4011348,
+        "long":2.1527064,
+        "ratings":[
+            { 
+                "stars":2,
+                "comment":"Cuisine exceptionnelle, des goûts exquis et présentation raffinée! Le personnel est au petit soin. :) Un bon choix de vins à prix très raisonnable. Fortement recommandé !"
+            },
+            { 
+                "stars":1,
+                "comment":"Bon accueil. Decoration soignée. Et nous nous sommes régalés."  
+            }
+        ]
+    } 
+]

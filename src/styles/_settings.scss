@@ -15,8 +15,8 @@ $color-3: rgba(214, 0, 179, 0.6);
 body {
     font-family: $font-1;
     max-width: 1296px;
-    background-color: $color-1;
-    color: $color-2;
+    background-color: $color-2;
+    color: $color-1;
 }
 li {
     list-style: none;
@@ -28,5 +28,15 @@ a {
 a:visited {
     color: $color-2;
 }
+
+/*========== GLOBALS ==========*/
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*========== CARDS ==========*/
+
 
 
