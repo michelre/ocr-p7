@@ -1,0 +1,15 @@
+.hero__banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #141517;
+}
+
+.hero__banner__image {
+    width: 90%;
+    height: auto;
+    border-radius: 35px;
+    margin-top: 5%;
+}

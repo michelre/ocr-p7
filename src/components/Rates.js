@@ -8,7 +8,7 @@ const moyenne = averageCalculate(ratings);
 
     return (
         <>
-            <span>{ moyenne }</span>
+            <span>{ moyenne.toFixed(1) }</span>
             <Rate value={ moyenne }  allowHalf={ true }/* Rating Props */ />
         </>
     );

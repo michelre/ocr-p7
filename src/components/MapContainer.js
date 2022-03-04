@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
-import { useState} from "react";
 import MarkerInfo from './MarkerInfo';
 
 
-const MapContainer = ({ restaurants }) => {
+const MapContainer = ({ restaurants, toggleShowModal }) => {
 
   // const locations = [
   //   {
@@ -42,13 +41,14 @@ const MapContainer = ({ restaurants }) => {
   };
     
     return (
-      <div className='map'>
+      <div className='map flex-center pb-3'>
         <LoadScript
           googleMapsApiKey={process.env.REACT_APP_GOOGLE_KEY}>
             <GoogleMap
               mapContainerStyle={mapContainerStyle}
               zoom={15}
               center={defaultCenter}
+              onClick={toggleShowModal}
               >
               {
                 restaurants.map(restaurant => {

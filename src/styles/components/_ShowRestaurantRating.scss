@@ -1,0 +1,130 @@
+.modal-comment__ {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: #282c3461;
+    backdrop-filter: blur(8px); // This be the blur
+}
+
+.modal-comment__container {
+    padding: 4rem 3rem;
+    border-radius: 10px;
+    max-width: 555px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    color: $color-2;
+    background-color: #fafafe;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.modal-comment__button {
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.modal-comment__form-container {
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px #ddd;
+}
+
+.modal-comment__header {
+    padding: 1rem 0;
+}
+
+.modal-content__title {
+    margin-bottom: 1rem;
+}
+
+.modal-comment__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.form-card__title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+
+.modal-comment__form input,
+.modal-comment__form textarea,
+.modal-comment__form-title {
+    margin-bottom: 1rem;
+}
+
+.form-card__button input {
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    color: #fff;
+    background: linear-gradient(#747171, #282c34);
+    box-shadow: 0 2px 12px -3px $color-2;
+    // @include animation(btn 6.0s 3s infinite ease-in-out);
+    opacity: 0.9;
+    // @include transition(all 0.3s);
+    &:hover{
+        opacity: 1;
+        box-shadow: 0 2px 2px -3px $color-2;
+    }
+}
+
+.input_field {
+    border: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 14px;
+    line-height: 30px;
+    &:focus, &:valid {
+        outline: 0;
+        border-bottom-color: #665856;
+        &+.input_label {
+            color: #665856;
+        }
+        
+    }
+    
+}
+
+.modal-comment__form button {
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: .25rem;
+}
+
+

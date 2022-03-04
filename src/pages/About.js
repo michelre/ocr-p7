@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../componets/Navigation';
+import Navigation from '../components/Navigation';
 
 const About = () => {
     return (

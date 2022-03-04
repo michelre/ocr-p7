@@ -5,6 +5,7 @@ $font-1: 'Poppins', sans-serif;
 $color-1: #fff;
 $color-2: #282c34;
 $color-3: rgba(214, 0, 179, 0.6);
+$color-4: rgb(255, 56, 92);
 
 
 * {
@@ -14,10 +15,10 @@ $color-3: rgba(214, 0, 179, 0.6);
 }
 body {
     font-family: $font-1;
-    max-width: 1296px;
-    background-color: $color-2;
-    color: $color-1;
+    background-color: $color-1;
+    color: $color-2;
 }
+
 li {
     list-style: none;
 }
@@ -30,13 +31,50 @@ a:visited {
 }
 
 /*========== GLOBALS ==========*/
+.position-relative {
+    position: relative;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.pb-3 {
+    padding-bottom: 3rem;
+} 
+
+.container {
+    width:100%;
+    padding-right:10px;
+    padding-left:10px;
+    margin-right:auto;
+    margin-left:auto
+}
+@media (min-width:576px) {
+    .container {
+        max-width:540px
+    }
+}
+@media (min-width:768px) {
+    .container {
+        max-width:720px
+    }
+}
+@media (min-width:992px) {
+    .container {
+        max-width:960px
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+/*========== FLEX ==========*/
 .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-/*========== CARDS ==========*/
-
-
 

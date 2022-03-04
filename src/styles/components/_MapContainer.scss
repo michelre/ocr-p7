@@ -1,13 +1,14 @@
 .map {
-    width: 80%;
+    position: relative;
+    width: auto;
     border-radius: 20px;
-
+    
     > div:nth-child(2) {
         height: 50vh;
         width: 100%;
         position: relative;
         overflow: hidden;
         border-radius: 20px;
-       }
+    }
 }
 
