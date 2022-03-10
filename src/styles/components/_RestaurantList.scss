@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 1.5rem;
+  grid-gap: 3.5rem;
 }
 
 .card {
@@ -33,11 +33,18 @@
   font-weight: bold;
 }
 
+.restaurants-list__name,
+.restaurants-list__address,
+.restaurants-list__ratings {
+  margin-bottom: 1rem;
+}
+
 .restaurants-list__button {
-  background: white;
-  border: 1px solid black;
+  background: $black;
+  border: 1px solid $black;
   padding: 10px;
   border-radius: .25rem;
+  color: $white;
 }
 
 

@@ -12,22 +12,23 @@ const Form = ({isShowing,hideModal, submitAddRestaurant}) => {
   return (
 
     <div className='modal-container'>
-      <div className="modal">
-      <button className="modal-button" onClick={hideModal}>×</button>
-        <div className="form-card">
-          <form onSubmit={handleSubmit(submitAddRestaurant)}>
-            <div className='form-card__title'>Ajouter un restaurant</div>
-            <div className="form-card__input">
+      <div className="add-modal">
+      <button className="add-modal-button" onClick={hideModal}>×</button>
+        <div className="add-form-card__">
+          <form  className="add-form-card__wrapper" onSubmit={handleSubmit(submitAddRestaurant)}>
+            <div className='add-form-card__title'>Ajouter un restaurant</div>
+            <div className="add-form-card__input">
               <input className='input_field'
-                defaultValue="restaurant" {...register("restaurantNameForm")} 
+                defaultValue="Nom du restaurant..." {...register("restaurantNameForm")} 
                 placeholder="Nom du restaurant"/>
             </div>
-            <div className="form-card__input">
+            <div className="add-form-card__input">
               <input className='input_field'
-                {...register("restaurantAdressForm", { required: true })} />
+                defaultValue="Adresse du restaurant..." {...register("restaurantAdressForm", { required: true })}
+                placeholder="Adresse du restaurant..." />
             </div>
             {errors.restaurantRequired && <span>This field is required</span>}
-            <div className="form-card__button">
+            <div className="add-form-card__button">
               <input type="submit" />
             </div>
           </form>

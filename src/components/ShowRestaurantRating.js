@@ -20,9 +20,9 @@ const Form = ({isShowing,hideModal, ratings, submitAddRating, restaurantName}) =
                     <div className="modal-content__title">commentaire : </div>
                     <ul className="modal-comment__header-text">
                         {ratings.map((rating) => 
-                        <li>
-                            {rating.comment}
-                            <Rate value={ rating.stars }  allowHalf={ true }/* Rating Props */ />
+                        <li className="modal-comment-item__wrapper">
+                            <span>{rating.comment}</span>
+                            <span><Rate value={ rating.stars }  allowHalf={ true } /></span>
                         </li> 
                         )}
                     </ul>

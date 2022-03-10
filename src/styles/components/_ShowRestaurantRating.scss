@@ -46,17 +46,39 @@
 
 .modal-comment__form-container {
     padding: 1rem;
-    border: 1px solid grey;
+    border: 1px solid $lightgrey;
     border-radius: 10px;
     box-shadow: inset 0 0 0 1px #ddd;
 }
 
 .modal-comment__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
     padding: 1rem 0;
+}
+
+.modal-comment__header-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .modal-content__title {
     margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.modal-comment-item__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: .9rem;
 }
 
 .modal-comment__form {
@@ -64,6 +86,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    > textarea {
+        border: 1px solid $lightgrey;
+    }
+    > input {
+        border: 1px solid $lightgrey;
+    }
 }
 
 .form-card__title {
@@ -111,9 +139,10 @@
     line-height: 30px;
     &:focus, &:valid {
         outline: 0;
-        border-bottom-color: #665856;
+        border-bottom-color: $lightgrey;
+        color: $lightgrey;
         &+.input_label {
-            color: #665856;
+            color: $lightgrey;
         }
         
     }
@@ -121,10 +150,11 @@
 }
 
 .modal-comment__form button {
-    background: white;
+    background: $black;
     border: 1px solid black;
     padding: 10px;
     border-radius: .25rem;
+    color: $white;
 }
 
 
